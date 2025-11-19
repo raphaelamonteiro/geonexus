@@ -1,18 +1,15 @@
 <div align="center">
-  
-# GeoNexus — Sistema Geográfico com CRUD Completo
 
-![TypeScript](https://img.shields.io/badge/typescript-f2a2b8?style=for-the-badge&logo=typescript&logoColor=white)
-![Axios](https://img.shields.io/badge/Axios-f2a2b8?style=for-the-badge&logo=axios&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-f2a2b8?style=for-the-badge&logo=Prisma&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-f2a2b8?style=for-the-badge&logo=mysql&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-f2a2b8?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/css3-f2a2b8?style=for-the-badge&logo=css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-f2a2b8?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Git](https://img.shields.io/badge/git-f2a2b8?style=for-the-badge&logo=git&logoColor=white)
+# GeoNexus: O mundo conectado de forma clara e acolhedora
+
+</div>
+
+<div align="center">
+
+*Um sistema web construído com o propósito de gerenciar dados relacionados a cidades, países e continentes, integrando informações reais de APIs externas em uma interface pastel e acolhedora.*
 
 
-*Um sistema web construído com o propósito de gerenciar dados relacionados a cidades, países e continente.*
+<img src="https://github.com/raphaelamonteiro/geonexus/blob/main/frontend-geonexus/src/assets/loading-kirby.gif" width="80" />
 
 </div>
 
@@ -20,33 +17,42 @@
 
 <div align="center">
 
-## 🎀 Índice
-
-<a href ="#sobre"> 🌍 Sobre o Projeto </a> |
-<a href ="#funcionalidades"> :star: Funcionalidades </a> |
-<a href ="#tech"> :computer: Tecnologias Utilizadas </a> |
-<a href ="#apis"> 🧩 APIs Integradas </a> |
-<a href ="#manual">  :bulb: Como Executar </a> |
-<br>
-<a href ="#estrutura"> :wrench: Estrutura do Projeto </a> |
-<a href ="#interface"> :cherry_blossom: Interface </a> |
-<a href ="#capturas"> 📸 Screenshots </a> |
-<a href ="#creditos"> :love_letter: Créditos </a>
-|
+![TypeScript](https://img.shields.io/badge/typescript-f2a2b8?style=for-the-badge\&logo=typescript\&logoColor=white)
+![Axios](https://img.shields.io/badge/axios-f2a2b8?style=for-the-badge\&logo=axios\&logoColor=white)
+![Prisma](https://img.shields.io/badge/prisma-f2a2b8?style=for-the-badge\&logo=prisma\&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-f2a2b8?style=for-the-badge\&logo=mysql\&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-f2a2b8?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS](https://img.shields.io/badge/css3-f2a2b8?style=for-the-badge\&logo=css\&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-f2a2b8?style=for-the-badge\&logo=bootstrap\&logoColor=white)
+![Git](https://img.shields.io/badge/git-f2a2b8?style=for-the-badge\&logo=git\&logoColor=white)
+![REST Countries](https://img.shields.io/badge/REST%20Countries-f2a2b8?style=for-the-badge\&logo=google-earth\&logoColor=white)
+![NewsData](https://img.shields.io/badge/NewsData-f2a2b8?style=for-the-badge\&logo=news\&logoColor=white)
 
 </div>
 
+---
+
+<div align="center">
+
+<a href ="#sobre"> 🌍 Sobre o Projeto </a> | <a href ="#funcionalidades"> ⭐ Funcionalidades </a> | <a href ="#tech"> 💻 Tecnologias </a> | <a href ="#apis"> 🧩 APIs </a> | <a href ="#manual"> 💡 Como Executar </a><a href ="#estrutura"> 🗂 Estrutura </a> |  <br>  <a href ="#interface"> 🌸 Interface </a> | <a href ="#capturas"> 📸 Screenshots </a> | <a href ="#creditos"> 💌 Créditos </a>
+
+</div>
+
+---
 
 # 🌍 Sobre o Projeto <a id="sobre"></a>
 
 O **GeoNexus** é uma aplicação acadêmica desenvolvida para gerenciar dados geográficos através de CRUDs completos.
-Ele permite relacionar **continentes → países → cidades**, consumir **APIs externas** e exibir isso tudo em uma interface fofa, organizada e com tons pastéis 🌸✨
+Com ele, é possível relacionar:
 
-O objetivo é unir prática de desenvolvimento web com integração de dados reais.
+➡ **Continentes → Países → Cidades**
+
+A interface foi projetada com tons **pastéis, predominantemente rosa**, trazendo suavidade, clareza e acessibilidade.
+Além disso, o sistema integra **duas APIs externas** para enriquecer os dados com bandeiras, informações detalhadas e notícias em tempo real.
 
 ---
 
-# :star: Funcionalidades <a id="funcionalidades"></a>
+# ⭐ Funcionalidades <a id="funcionalidades"></a>
 
 ### 🌎 Continentes
 
@@ -60,13 +66,30 @@ O objetivo é unir prática de desenvolvimento web com integração de dados rea
 ✔ Associados a um continente
 ✔ CRUD completo
 ✔ Listar países por continente
-✔ Exibir dados extras vindos das APIs
+✔ Exibir dados extras via REST Countries
+✔ Exibir notícias via NewsData
 
 ### 🏙️ Cidades
 
 ✔ Associadas a um país
 ✔ CRUD completo
-✔ Listar por país ou continente
+✔ Listar por país
+✔ Listar por continente
+
+---
+
+# 💻 Tecnologias Utilizadas <a id="tech"></a>
+
+| Tecnologia      | Descrição                |
+| --------------- | ------------------------ |
+| **TypeScript**  | Linguagem principal      |
+| **Node.js**     | Backend                  |
+| **Prisma ORM**  | Modelagem + queries      |
+| **MySQL**       | Banco relacional         |
+| **Axios**       | Consumo de APIs externas |
+| **Bootstrap**   | Interface pastel fofinha |
+| **Express**     | Rotas e controle         |
+| **HTML/CSS/JS** | Estrutura da UI          |
 
 ---
 
@@ -74,60 +97,63 @@ O objetivo é unir prática de desenvolvimento web com integração de dados rea
 
 ### 🔵 REST Countries
 
-Usada para obter dados como:
+Fornece dados como:
 
-* Bandeira
-* Capital
+* Bandeiras
 * Regiões
 * Idiomas
 * Moeda
+* Capital
+* Geografia
 
 ### 📰 NewsData
 
-Exibe notícias atuais relacionadas ao país selecionado.
-Ótimo para enriquecer a experiência do usuário 💗
+Exibe notícias recentes sobre o país selecionado.
+Ideal para enriquecer o contexto do usuário 🌸
 
 ---
 
-# :computer: Tecnologias Utilizadas  <a id="tech"></a>
+# 🗂 Estrutura do Projeto <a id="estrutura"></a>
 
-| Tecnologia      | Descrição                |
-| --------------- | ------------------------ |
-| **TypeScript**  | Linguagem principal      |
-| **Node.js**     | Backend                  |
-| **Prisma ORM**  | Modelagem + queries      |
-| **MySQL**       | Banco relacional         |
-| **Axios**       | Consumo de APIs          |
-| **Bootstrap**   | Interface pastel fofinha |
-| **Express.js**  | Rotas e controle         |
-| **HTML/CSS/JS** | Estrutura da UI          |
+Aqui está uma **visualização real** da estrutura do GeoNexus:
+
+```plaintext
+geonexus/
+│
+├── backend-geonexus/
+│   ├── prisma/
+│   │   ├── schema.prisma
+│   │   └── migrations/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── services/
+│   │   ├── routes/
+│   │   ├── middlewares/
+│   │   └── server.ts
+│   └── package.json
+│
+├── frontend-geonexus/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   ├── styles/
+│   │   └── main.ts
+│   └── index.html
+│
+└── README.md
+```
+
+Essa divisão **organiza bem** o backend e frontend, mantendo escalabilidade e clareza.
 
 ---
 
-# 🔧 Estrutura do Projeto <a id="estrutura"></a>
-
-| Tecnologia      | Descrição                |
-| --------------- | ------------------------ |
-| **TypeScript**  | Linguagem principal      |
-| **Node.js**     | Backend                  |
-| **Prisma ORM**  | Modelagem + queries      |
-| **MySQL**       | Banco relacional         |
-| **Axios**       | Consumo de APIs          |
-| **Bootstrap**   | Interface pastel fofinha |
-| **Express.js**  | Rotas e controle         |
-| **HTML/CSS/JS** | Estrutura da UI          |
-
----
-
-
----
-
-#  :bulb: Como Executar o Projeto  <a id="manual"></a>
+# 💡 Como Executar o Projeto <a id="manual"></a>
 
 ### 1️⃣ Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/geonexus.git
+git clone https://github.com/raphaelamonteiro/geonexus.git
 cd geonexus
 ```
 
@@ -139,7 +165,7 @@ npm install
 
 ### 3️⃣ Configure o `.env`
 
-```
+```env
 DATABASE_URL="mysql://usuario:senha@localhost:3306/geonexus"
 REST_COUNTRIES_URL="https://restcountries.com/v3.1"
 NEWSDATA_API_KEY="SUA_CHAVE_AQUI"
@@ -161,23 +187,24 @@ npm run dev
 
 # 🌸 Interface <a id="interface"></a>
 
-A UI do **GeoNexus** utiliza **tons pastéis, predominando rosa**, trazendo leveza sem perder a clareza.
-Bootstrap foi usado para:
+A UI do GeoNexus utiliza:
 
-* Formulários organizados
-* Cards elegantes
-* Botões suaves
-* Tabelas bem definidas
+✨ Tons pastéis (rosa predominante)
+✨ Layout organizado
+✨ Tabelas limpas e agradáveis
+✨ Botões suaves e intuitivos
+
+A experiência foi pensada para ser leve, acessível e acolhedora.
 
 ---
 
 # 📸 Screenshots <a id="capturas"></a>
 
-*(Quando quiser, é só me mandar prints que eu deixo essa seção PERFEITA e fofinha!)*
+*(Quando quiser, me envie os prints e eu organizo essa seção com molduras, bordas pastéis e layout fofinho!)*
 
 ---
 
-# 📚 Créditos <a id="creditos"></a>
+# 💌 Créditos <a id="creditos"></a>
 
 👩‍💻 **Desenvolvido por:** Raphaela
 📘 **Disciplina:** Programação Web
@@ -185,3 +212,11 @@ Bootstrap foi usado para:
 🏫 **Curso:** Análise e Desenvolvimento de Sistemas
 
 ---
+
+Se quiser agora:
+📌 adicionar GIFs nas seções
+📌 colocar cor de fundo nos títulos
+📌 gerar badges extras
+📌 inserir prints com moldura pastel
+
+É só pedir 💗🌸
