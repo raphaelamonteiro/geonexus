@@ -38,3 +38,13 @@ model City {
   countryId  Int
   country    Country @relation(fields: [countryId], references: [id])
 }
+
+model FavoriteCountry {
+  id        Int      @id @default(autoincrement())
+  code      String
+  name      String
+  continent String?
+  city      String?
+  note      String?
+  createdAt DateTime @default(now())
+}

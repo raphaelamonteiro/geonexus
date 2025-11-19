@@ -1,22 +1,21 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import FavoritesPage from "./pages/FavoritesPage";
+import CountriesPage from "./pages/CountriesPage";
+import CountryDetailsPage from "./pages/CountryDetailsPage";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  const [msg, setMsg] = useState("");
 
-  useEffect(() => {
-    axios.get("http://localhost:3000/hello")
-      .then((res) => setMsg(res.data.message))
-      .catch(() => setMsg("Erro ao conectar :("));
-  }, []);
 
+export default function App() {
   return (
-    <div style={{ padding: 20 }}>
-      <h1>Front + Back conectados!</h1>
-      <p>Resposta do servidor:</p>
-      <strong>{msg}</strong>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/fav" element={<FavoritesPage />} />
+        <Route path="/countries" element={<CountriesPage />} />
+        <Route path="/country/:country" element={<CountryDetailsPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

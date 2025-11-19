@@ -1,11 +1,11 @@
 import express from "express";
 import cors from "cors";
-import externalRoutes from "./routes/external.routes";
+import favoritesRoutes from "./routes/favoritesRoutes";
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api", externalRoutes);
+app.use("/favorites", favoritesRoutes);
 
-export default app;
+app.listen(3000, () => console.log("Servidor rodando na porta 3000!"));
