@@ -18,6 +18,8 @@
 <div align="center">
 
 ![TypeScript](https://img.shields.io/badge/typescript-f2a2b8?style=for-the-badge\&logo=typescript\&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-f2a2b8?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/react-f2a2b8?style=for-the-badge&logo=react&logoColor=white)
 ![Axios](https://img.shields.io/badge/axios-f2a2b8?style=for-the-badge\&logo=axios\&logoColor=white)
 ![Prisma](https://img.shields.io/badge/prisma-f2a2b8?style=for-the-badge\&logo=prisma\&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-f2a2b8?style=for-the-badge\&logo=mysql\&logoColor=white)
@@ -34,8 +36,19 @@
 
 <div align="center">
 
-<a href ="#sobre"> 🌍 Sobre o Projeto </a> | <a href ="#funcionalidades"> ⭐ Funcionalidades </a> | <a href ="#tech"> 💻 Tecnologias </a> | <a href ="#apis"> 🧩 APIs </a> | <a href ="#manual"> 💡 Como Executar </a><a href ="#estrutura"> 🗂 Estrutura </a> |  <br>  <a href ="#interface"> 🌸 Interface </a> | <a href ="#capturas"> 📸 Screenshots </a> | <a href ="#creditos"> 💌 Créditos </a>
+<div align="center">
 
+<a href="#sobre"> 🌍 Sobre o Projeto </a> |
+<a href="#funcionalidades"> ⭐ Funcionalidades </a> |
+<a href="#tech"> 💻 Tecnologias </a> |
+<a href="#apis"> 🧩 APIs </a> |
+<a href="#manual"> 💡 Como Executar </a> |
+<a href="#estrutura"> 🗂 Estrutura </a> |
+<br>
+<a href="#capturas"> 📸 Screenshots </a> |
+<a href="#creditos"> 💌 Créditos </a>
+
+</div>
 </div>
 
 ---
@@ -87,9 +100,11 @@ Além disso, o sistema integra **duas APIs externas** para enriquecer os dados c
 | **Prisma ORM**  | Modelagem + queries      |
 | **MySQL**       | Banco relacional         |
 | **Axios**       | Consumo de APIs externas |
-| **Bootstrap**   | Interface pastel fofinha |
+| **Bootstrap**   | Interface responsiva e intuitiva |
 | **Express**     | Rotas e controle         |
+| **React/Vite**  | Construção da interface web  |
 | **HTML/CSS/JS** | Estrutura da UI          |
+
 
 ---
 
@@ -185,38 +200,18 @@ npm run dev
 
 ---
 
-# 🌸 Interface <a id="interface"></a>
-
-A UI do GeoNexus utiliza:
-
-✨ Tons pastéis (rosa predominante)
-✨ Layout organizado
-✨ Tabelas limpas e agradáveis
-✨ Botões suaves e intuitivos
-
-A experiência foi pensada para ser leve, acessível e acolhedora.
-
----
-
 # 📸 Screenshots <a id="capturas"></a>
 
-*(Quando quiser, me envie os prints e eu organizo essa seção com molduras, bordas pastéis e layout fofinho!)*
-
+PRINTS AQUI - EM BREVE!
 ---
 
 # 💌 Créditos <a id="creditos"></a>
 
-👩‍💻 **Desenvolvido por:** Raphaela
+**Desenvolvido por:** Raphaela Monteiro
+
 📘 **Disciplina:** Programação Web
-👨‍🏫 **Professor:** André Olímpio
-🏫 **Curso:** Análise e Desenvolvimento de Sistemas
 
----
+**Professor:** [André Olímpio](https://github.com/andreolimpio)
 
-Se quiser agora:
-📌 adicionar GIFs nas seções
-📌 colocar cor de fundo nos títulos
-📌 gerar badges extras
-📌 inserir prints com moldura pastel
+**Curso:** Análise e Desenvolvimento de Sistemas
 
-É só pedir 💗🌸
