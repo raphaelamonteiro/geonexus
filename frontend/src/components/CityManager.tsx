@@ -137,19 +137,19 @@ const CityManager: React.FC = () => {
                                         <td>{getCountryName(city.countryId)}</td>
                                         <td>
                                             <Button
-                                                variant="outline-primary"
+                                                variant="outline-editar"
                                                 size="sm"
                                                 className="me-2"
                                                 onClick={() => handleEdit(city)}
                                             >
-                                                ✏️ Editar
+                                                Editar
                                             </Button>
                                             <Button
                                                 variant="outline-danger"
                                                 size="sm"
                                                 onClick={() => handleDelete(city.id)}
                                             >
-                                                🗑️ Excluir
+                                                Excluir
                                             </Button>
                                         </td>
                                     </tr>
@@ -171,7 +171,7 @@ const CityManager: React.FC = () => {
             <Modal show={showModal} onHide={() => setShowModal(false)} centered>
                 <Modal.Header closeButton className="border-0">
                     <Modal.Title className="text-rosa">
-                        {editingCity ? '✏️ Editar Cidade' : '🏙️ Nova Cidade'}
+                        {editingCity ? 'Editar Cidade' : 'Nova Cidade'}
                     </Modal.Title>
                 </Modal.Header>
                 <Form onSubmit={handleSubmit}>

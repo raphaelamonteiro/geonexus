@@ -1,25 +1,195 @@
+/* frontend/src/App.css */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 
 :root {
   font-family: "Baloo 2", sans-serif;
-  --light-color: #FBFBFB;
-  --pink-light: #fff0f6;
-  --pink-medium: #ffdeeb;
-  --pink-dark: #fcc2d7;
-  --pink-highlight: #e64980;
-  --pink-text: #a61e4d;
-  --pink-border: #faa2c1;
-  --danger-color: #AF3E3E;
-    --secondary-danger-color: #DA6C6C;
-    --success-color: #75a36d;
-    --secondary-success-color: #CEE5D0;;
-  
+
+  /* Tons Pasteis Fofos - Tema Kirby */
+  --pink-pastel-light: #FFF0F5;
+  /* Lavender Blush - muito suave */
+  --pink-pastel-medium: #FFD1DC;
+  /* Pastel Pink - rosinha claro */
+  --pink-pastel-dark: #F8C8DC;
+  /* Pink Pastel - meio termo */
+  --pink-pastel-highlight: #FFB6C1;
+  /* Light Pink - destaque suave */
+  --pink-pastel-text: #D8A1C4;
+  /* Lilás rosado - para textos */
+  --pink-pastel-border: #F4C2C2;
+  /* Tea Rose - bordas suaves */
+
+  /* Cores complementares pasteis */
+  --mint-pastel: #B5EAD7;
+  /* Mint verde pastel */
+  --lavender-pastel: #E6E6FA;
+  /* Lavanda suave */
+  --peach-pastel: #FFDAC1;
+  /* Pêssego pastel */
+  --blue-pastel: #B5D8EB;
+  /* Azul bebê pastel */
+  --yellow-pastel: #FFF9C4;
+  /* Amarelo pastel */
+
+  /* Cores de estado */
+  --success-pastel: #C8E6C9;
+  /* Verde pastel sucesso */
+  --danger-pastel: #FFCDD2;
+  /* Vermelho pastel erro */
+  --warning-pastel: #FFECB3;
+  /* Amarelo pastel alerta */
 }
 
 body {
-  background-color: var(--pink-text) !important;
-  font-family: "Baloo 2",
-    sans-serif;
+  background: linear-gradient(135deg, var(--pink-pastel-light), var(--lavender-pastel)) !important;
+  font-family: "Baloo 2", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Layout Principal */
+.rosa-bg {
+  background: linear-gradient(135deg, var(--pink-pastel-light), var(--lavender-pastel));
+  min-height: 100vh;
+}
+
+.rosa-navbar {
+  background: linear-gradient(135deg, var(--pink-pastel-highlight), var(--pink-pastel-text)) !important;
+  box-shadow: 0 4px 20px rgba(216, 161, 196, 0.3);
+  border-bottom: 3px solid var(--pink-pastel-border);
+}
+
+.rosa-navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rosa-navbar .nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  margin: 0 5px;
+  padding: 8px 16px !important;
+}
+
+.rosa-navbar .nav-link:hover,
+.rosa-navbar .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Cards Fofos */
+.rosa-card {
+  background: linear-gradient(135deg, white, var(--pink-pastel-light));
+  border-radius: 25px;
+  border: 3px solid var(--pink-pastel-border);
+  box-shadow:
+    0 8px 25px rgba(216, 161, 196, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  position: relative;
+}
+
+.rosa-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--pink-pastel-highlight), var(--mint-pastel), var(--blue-pastel));
+}
+
+.rosa-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 15px 40px rgba(216, 161, 196, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border-color: var(--pink-pastel-highlight);
+}
+
+/* Botões Fofos */
+.btn-rosa {
+  background: linear-gradient(135deg, var(--pink-pastel-highlight), var(--pink-pastel-text));
+  border: none;
+  color: white;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-family: "Baloo 2", sans-serif;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(216, 161, 196, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-rosa::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-rosa:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(216, 161, 196, 0.4);
+  background: linear-gradient(135deg, var(--pink-pastel-text), var(--pink-pastel-highlight));
+}
+
+.btn-rosa:hover::before {
+  left: 100%;
+}
+
+.btn-rosa-outline {
+  background: transparent;
+  border: 2px solid var(--pink-pastel-highlight);
+  color: var(--pink-pastel-text);
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-family: "Baloo 2", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.btn-rosa-outline:hover {
+  background: var(--pink-pastel-highlight);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
+}
+
+/* Textos */
+.text-rosa {
+  color: var(--pink-pastel-text) !important;
+  font-weight: 600;
+}
+
+/* Cards de Notícias */
+.news-card {
+  border-left: 6px solid var(--pink-pastel-highlight);
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, white, var(--lavender-pastel));
+}
+
+.news-card:hover {
+  border-left: 12px solid var(--mint-pastel);
+  background: linear-gradient(135deg, var(--pink-pastel-light), var(--lavender-pastel));
+  transform: translateX(5px);
+}
+
+/* Loading e Animações */
+.loading-spinner {
+  color: var(--pink-pastel-highlight);
+  width: 3rem;
+  height: 3rem;
 }
 
 .loading-wrapper {
@@ -28,18 +198,202 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 2rem;
 }
 
-
 .kirby-img {
-  width: 100px;
+  width: 120px;
   height: auto;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  animation: float 3s ease-in-out infinite;
 }
 
 .loading-text {
   font-family: "Baloo 2", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--pink-border);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--pink-pastel-text);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
+
+/* Tabelas Fofas */
+.table {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(216, 161, 196, 0.1);
+}
+
+.table thead th {
+  background: linear-gradient(135deg, var(--pink-pastel-light), var(--lavender-pastel));
+  border: none;
+  color: var(--pink-pastel-text);
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: var(--pink-pastel-light);
+  transform: scale(1.01);
+}
+
+/* Badges Fofos */
+.badge {
+  border-radius: 15px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+.badge.bg-primary {
+  background: linear-gradient(135deg, var(--blue-pastel), #AEC6CF) !important;
+  color: #2C5530;
+}
+
+.badge.bg-secondary {
+  background: linear-gradient(135deg, var(--mint-pastel), #B5EAD7) !important;
+  color: #2C5530;
+}
+
+.badge.bg-success {
+  background: var(--success-pastel) !important;
+  color: #2C5530;
+}
+
+.badge.bg-danger {
+  background: var(--danger-pastel) !important;
+  color: #7B1C1C;
+}
+
+/* Formulários Fofos */
+.form-control,
+.form-select {
+  border: 2px solid var(--pink-pastel-border);
+  border-radius: 15px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  font-family: "Baloo 2", sans-serif;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--pink-pastel-highlight);
+  box-shadow: 0 0 0 0.2rem rgba(255, 182, 193, 0.25);
+  transform: scale(1.02);
+}
+
+/* Modal Fofo */
+.modal-content {
+  border-radius: 25px;
+  border: 3px solid var(--pink-pastel-border);
+  overflow: hidden;
+}
+
+.modal-header {
+  background: linear-gradient(135deg, var(--pink-pastel-light), var(--lavender-pastel));
+  border-bottom: 2px solid var(--pink-pastel-border);
+}
+
+.modal-footer {
+  background: var(--pink-pastel-light);
+  border-top: 2px solid var(--pink-pastel-border);
+}
+
+/* Alertas Fofos */
+.alert {
+  border-radius: 20px;
+  border: none;
+  font-weight: 500;
+}
+
+.alert-success {
+  background: var(--success-pastel);
+  color: #2C5530;
+  border-left: 6px solid var(--success-color);
+}
+
+.alert-danger {
+  background: var(--danger-pastel);
+  color: #7B1C1C;
+  border-left: 6px solid var(--danger-color);
+}
+
+.alert-warning {
+  background: var(--warning-pastel);
+  color: #856404;
+  border-left: 6px solid #FFA000;
+}
+
+/* Bandeiras de Países */
+.country-flag {
+  width: 35px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 2px solid var(--pink-pastel-border);
+  transition: all 0.3s ease;
+}
+
+.country-flag:hover {
+  transform: scale(1.1);
+  border-color: var(--pink-pastel-highlight);
+}
+
+/* Imagens de Notícias */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--pink-pastel-border);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .rosa-card {
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  .btn-rosa,
+  .btn-rosa-outline {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .loading-text {
+    font-size: 1.2rem;
+  }
+
+  .kirby-img {
+    width: 80px;
+  }
+}
+
+/* Gradientes especiais para diferentes seções */
+.gradient-news {
+  background: linear-gradient(135deg, var(--pink-pastel-light), var(--blue-pastel));
+}
+
+.gradient-countries {
+  background: linear-gradient(135deg, var(--pink-pastel-light), var(--mint-pastel));
+}
+
+.gradient-cities {
+  background: linear-gradient(135deg, var(--pink-pastel-light), var(--peach-pastel));
+}
+
+.gradient-api {
+  background: linear-gradient(135deg, var(--pink-pastel-light), var(--lavender-pastel));
+}
+
+    .btn-editar,
+    .btn-editar-outline {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      background-color: var(--pink-pastel-medium) !important;
+      color: var(--pink-pastel-highlight) !important;
+    }

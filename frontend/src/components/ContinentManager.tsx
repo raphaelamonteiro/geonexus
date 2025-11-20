@@ -123,7 +123,7 @@ const ContinentManager: React.FC = () => {
                                         </td>
                                         <td>
                                             <Button
-                                                variant="outline-primary"
+                                                variant="outline-editar"
                                                 size="sm"
                                                 className="me-2"
                                                 onClick={() => handleEdit(continent)}

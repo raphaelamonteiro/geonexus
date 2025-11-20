@@ -186,7 +186,7 @@ const CountryManager: React.FC = () => {
                                         </td>
                                         <td>
                                             <Button
-                                                variant="outline-primary"
+                                                variant="outline-editar"
                                                 size="sm"
                                                 className="me-2"
                                                 onClick={() => handleEdit(country)}
@@ -220,7 +220,7 @@ const CountryManager: React.FC = () => {
             <Modal show={showModal} onHide={() => setShowModal(false)} centered>
                 <Modal.Header closeButton className="border-0">
                     <Modal.Title className="text-rosa">
-                        {editingCountry ? '✏️ Editar País' : '🇧🇷 Novo País'}
+                        {editingCountry ? 'Editar País' : 'Novo País'}
                     </Modal.Title>
                 </Modal.Header>
                 <Form onSubmit={handleSubmit}>
