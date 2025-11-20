@@ -3,12 +3,12 @@
 :root {
   font-family: "Baloo 2", sans-serif;
   --light-color: #FBFBFB;
-  --rosa-claro: #fff0f6;
-  --rosa-medio: #ffdeeb;
-  --rosa-escuro: #fcc2d7;
-  --rosa-destaque: #e64980;
-  --rosa-texto: #a61e4d;
-  --rosa-borda: #faa2c1;
+  --pink-light: #fff0f6;
+  --pink-medium: #ffdeeb;
+  --pink-dark: #fcc2d7;
+  --pink-highlight: #e64980;
+  --pink-text: #a61e4d;
+  --pink-border: #faa2c1;
   --danger-color: #AF3E3E;
     --secondary-danger-color: #DA6C6C;
     --success-color: #75a36d;
@@ -17,25 +17,9 @@
 }
 
 body {
-  background-color: var(--rosa-claro) !important;
+  background-color: var(--pink-text) !important;
   font-family: "Baloo 2",
     sans-serif;
-}
-
-/* Texto minimalista */
-.card-title {
-  font-family: "Baloo 2", sans-serif;
-  font-size: 54px;
-  font-weight: 600;
-  color: var(--rosa-destaque) !important;
-}
-
-
-.custom-card {
-  background-color: var(--rosa-medio) !important;
-  border-radius: 15%;
-  align-items: center;
-  text-align: center;
 }
 
 .loading-wrapper {
@@ -57,60 +41,5 @@ body {
   font-family: "Baloo 2", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  color: var(--rosa-borda);
-}
-
-
-.cute-alert {
-  font-family: "Baloo 2", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--light-color) !important;
-  background-color: var(--danger-color) !important;
-}
-
-.btn-cutedanger {
-    background-color: var(--light-color) !important;
-  font-family: "Baloo 2", sans-serif;
-  font-size: 15px;
-  font-weight: 600 !important;
-  color: var(--danger-color) !important;
-}
-.btn-cutedanger:hover {
-  background-color: var(--light-color) !important;
-  font-family: "Baloo 2", sans-serif;
-  font-size: 15px;
-  font-weight: 600 !important;
-  color: #632626 !important;
-}
-
-.btn-cutesuccess {
-  font-family: "Baloo 2", sans-serif !important;
-    font-size: 20px !important;
-    font-weight: 700 !important;
-    color: var(--light-color) !important;
-    background-color: var(--success-color) !important;
-}
-
-.cutealert-heading {
-  font-family: "Baloo 2", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  color: var(--rosa-destaque);
-}
-
-.btn-testar {
-  font-family: "Baloo 2", sans-serif !important;
-    font-size: 20px !important;
-    font-weight: 700 !important;
-    color: var(--light-color) !important;
-    background-color: #CD5D7D !important;
-}
-
-.btn-testar:hover {
-  font-family: "Baloo 2", sans-serif !important;
-    font-size: 20px !important;
-    font-weight: 700 !important;
-    color: var(--light-color) !important;
-    background-color: #9c415b !important;
+  color: var(--pink-border);
 }

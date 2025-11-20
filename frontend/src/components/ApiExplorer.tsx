@@ -1,7 +1,8 @@
 // frontend/src/components/ApiExplorer.tsx
 import React, { useState } from 'react';
 import { Row, Col, Card, Button, Form, Spinner, Alert, Badge } from 'react-bootstrap';
-import { apiService, ApiCountry, NewsArticle } from '../services/api';
+import { apiService } from '../services/api';
+import type { ApiCountry, NewsArticle } from '../services/api';
 
 const ApiExplorer: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'countries' | 'news'>('countries');
@@ -83,13 +84,13 @@ const ApiExplorer: React.FC = () => {
                   variant={activeTab === 'countries' ? 'primary' : 'outline-primary'}
                   onClick={() => setActiveTab('countries')}
                 >
-                  🌍 Países
+                  Países
                 </Button>
                 <Button
                   variant={activeTab === 'news' ? 'primary' : 'outline-primary'}
                   onClick={() => setActiveTab('news')}
                 >
-                  📰 Notícias
+                  Notícias
                 </Button>
               </div>
             </Col>
@@ -188,7 +189,7 @@ const ApiExplorer: React.FC = () => {
             <Col>
               <Card className="text-center">
                 <Card.Body>
-                  <h5 className="text-muted">🌍 Nenhum país encontrado</h5>
+                  <h5 className="text-muted">Nenhum país encontrado</h5>
                   <p>Use os filtros acima para explorar países</p>
                 </Card.Body>
               </Card>
@@ -224,7 +225,7 @@ const ApiExplorer: React.FC = () => {
             <Col>
               <Card className="text-center">
                 <Card.Body>
-                  <h5 className="text-muted">📰 Nenhuma notícia encontrada</h5>
+                  <h5 className="text-muted">Nenhuma notícia encontrada</h5>
                   <p>Use os filtros acima para explorar notícias</p>
                 </Card.Body>
               </Card>

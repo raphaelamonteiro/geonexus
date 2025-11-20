@@ -42,16 +42,37 @@ export interface NewsArticle {
     category: string[];
 }
 
+
 export interface ApiCountry {
     name: string;
     officialName: string;
     code: string;
     code3: string;
     region: string;
+    subregion: string;
     capital: string;
     population: number;
     area: number;
     flag: string;
+    independent?: boolean;
+}
+
+// Interfaces para respostas da API
+export interface CountriesResponse {
+    count: number;
+    countries: ApiCountry[];
+}
+
+export interface RegionsResponse {
+    regions: string[];
+}
+
+export interface NewsResponse {
+    success: boolean;
+    country?: string;
+    category?: string;
+    totalResults: number;
+    articles: NewsArticle[];
 }
 
 // Serviços da API
@@ -90,19 +111,17 @@ export const apiService = {
     // API Externa - RestCountries
     external: {
         getCountries: (params?: { name?: string; region?: string; code?: string }) =>
-            api.get<{ count: number; countries: ApiCountry[] }>('/external/countries', { params }),
-        getRegions: () => api.get<{ regions: string[] }>('/external/regions'),
+            api.get<CountriesResponse>('/external/countries', { params }),
+        getRegions: () => api.get<RegionsResponse>('/external/regions'),
         importCountry: (data: { code: string; continentId: number }) =>
             api.post('/external/countries/import', data),
     },
 
     // Notícias
     news: {
-        getGeneral: () => api.get('/news'),
-        getByCountry: (countryCode: string, category?: string) =>
-            api.get(`/news/country/${countryCode}`, { params: { category } }),
-        getByCategory: (category: string) =>
-            api.get(`/news/category/${category}`),
+        getGeneral: () => api.get<NewsResponse>('/news'),
+        getByCountry: (countryCode: string) => api.get<NewsResponse>(`/news/country/${countryCode}`),
+        getByCategory: (category: string) => api.get<NewsResponse>(`/news/category/${category}`),
     },
 
     // Health Check

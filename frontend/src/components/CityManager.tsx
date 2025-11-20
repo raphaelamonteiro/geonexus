@@ -1,7 +1,8 @@
 // frontend/src/components/CityManager.tsx
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Card, Button, Table, Form, Modal, Spinner, Alert } from 'react-bootstrap';
-import { apiService, City, Country } from '../services/api';
+import { apiService } from '../services/api';
+import type { City, Country } from '../services/api'; // ← Importação correta
 
 const CityManager: React.FC = () => {
     const [cities, setCities] = useState<City[]>([]);
@@ -95,12 +96,12 @@ const CityManager: React.FC = () => {
                 <Card.Body>
                     <Row className="align-items-center">
                         <Col>
-                            <h2 className="text-rosa mb-0">🏙️ Gerenciar Cidades</h2>
+                            <h2 className="text-rosa mb-0">Gerenciar Cidades</h2>
                             <p className="text-muted mb-0">Adicione, edite ou remova cidades</p>
                         </Col>
                         <Col xs="auto">
                             <Button className="btn-rosa" onClick={openCreateModal}>
-                                ➕ Nova Cidade
+                                Nova Cidade
                             </Button>
                         </Col>
                     </Row>
@@ -134,9 +135,6 @@ const CityManager: React.FC = () => {
                                             <strong className="text-rosa">{city.name}</strong>
                                         </td>
                                         <td>{getCountryName(city.countryId)}</td>
-                                        <td>
-                                            {new Date(city.createdAt).toLocaleDateString('pt-BR')}
-                                        </td>
                                         <td>
                                             <Button
                                                 variant="outline-primary"

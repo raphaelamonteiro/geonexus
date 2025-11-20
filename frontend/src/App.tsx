@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Navbar, Nav, Alert, Spinner } from 'react-bootstrap';
+import { Container, Navbar, Nav, Alert } from 'react-bootstrap';
 import { apiService } from './services/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import Loading from "./components/Loading";
+import './index.css';
 
 
 import ContinentManager from './components/ContinentManager';
@@ -38,11 +39,10 @@ function App() {
 
   return (
     <div className="rosa-bg">
-      {/* Navbar Rosa */}
-      <Navbar variant="dark" className="rosa-navbar" expand="lg">
+      <Navbar className="rosa-navbar" expand="lg">
         <Container>
           <Navbar.Brand href="#" className="fw-bold">
-            🌍 GeoNexus
+            GeoNexus
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -51,45 +51,46 @@ function App() {
                 active={activeTab === 'news'}
                 onClick={() => setActiveTab('news')}
               >
-                📰 Notícias
+                Notícias
               </Nav.Link>
               <Nav.Link
                 active={activeTab === 'continents'}
                 onClick={() => setActiveTab('continents')}
               >
-                🌎 Continentes
+                Continentes
               </Nav.Link>
               <Nav.Link
                 active={activeTab === 'countries'}
                 onClick={() => setActiveTab('countries')}
               >
-                🇧🇷 Países
+                Países
               </Nav.Link>
               <Nav.Link
                 active={activeTab === 'cities'}
                 onClick={() => setActiveTab('cities')}
               >
-                🏙️ Cidades
+                Cidades
               </Nav.Link>
               <Nav.Link
                 active={activeTab === 'api'}
                 onClick={() => setActiveTab('api')}
               >
-                🔍 API Explorer
+                API Explorer
               </Nav.Link>
             </Nav>
             <Nav>
               {loading ? (
-                <Spinner animation="border" size="sm" className="loading-spinner" />
+                <Loading />
               ) : health ? (
                 <Alert variant="success" className="mb-0 py-1 px-2">
-                  ✅ Online
+                  Online
                 </Alert>
               ) : (
                 <Alert variant="danger" className="mb-0 py-1 px-2">
-                  ❌ Offline
+                  Offline
                 </Alert>
               )}
+
             </Nav>
           </Navbar.Collapse>
         </Container>

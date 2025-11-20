@@ -75,12 +75,12 @@ const ContinentManager: React.FC = () => {
                 <Card.Body>
                     <Row className="align-items-center">
                         <Col>
-                            <h2 className="text-rosa mb-0">🌎 Gerenciar Continentes</h2>
+                            <h2 className="text-rosa mb-0">Gerenciar Continentes</h2>
                             <p className="text-muted mb-0">Adicione, edite ou remova continentes</p>
                         </Col>
                         <Col xs="auto">
                             <Button className="btn-rosa" onClick={openCreateModal}>
-                                ➕ Novo Continente
+                                Novo Continente
                             </Button>
                         </Col>
                     </Row>
@@ -128,14 +128,14 @@ const ContinentManager: React.FC = () => {
                                                 className="me-2"
                                                 onClick={() => handleEdit(continent)}
                                             >
-                                                ✏️ Editar
+                                                Editar
                                             </Button>
                                             <Button
                                                 variant="outline-danger"
                                                 size="sm"
                                                 onClick={() => handleDelete(continent.id)}
                                             >
-                                                🗑️ Excluir
+                                                Excluir
                                             </Button>
                                         </td>
                                     </tr>
@@ -157,7 +157,7 @@ const ContinentManager: React.FC = () => {
             <Modal show={showModal} onHide={() => setShowModal(false)} centered>
                 <Modal.Header closeButton className="border-0">
                     <Modal.Title className="text-rosa">
-                        {editingContinent ? '✏️ Editar Continente' : '🌎 Novo Continente'}
+                        {editingContinent ? 'Editar Continente' : ' Novo Continente'}
                     </Modal.Title>
                 </Modal.Header>
                 <Form onSubmit={handleSubmit}>

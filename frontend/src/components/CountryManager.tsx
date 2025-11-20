@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Card, Button, Table, Form, Modal, Spinner, Alert, Badge } from 'react-bootstrap';
-import { apiService, Country, Continent, ApiCountry } from '../services/api';
+import { apiService } from '../services/api';
+import type { Country, Continent, ApiCountry } from '../services/api'; // ← Importação correta
 
 const CountryManager: React.FC = () => {
     const [countries, setCountries] = useState<Country[]>([]);
@@ -72,7 +73,7 @@ const CountryManager: React.FC = () => {
                 return;
             }
 
-            const continentId = continents[0].id; // Usa o primeiro continente como padrão
+            const continentId = continents[0].id;
             await apiService.external.importCountry({
                 code: apiCountry.code,
                 continentId
@@ -127,10 +128,10 @@ const CountryManager: React.FC = () => {
                         </Col>
                         <Col xs="auto" className="d-flex gap-2">
                             <Button className="btn-rosa-outline" onClick={loadApiCountries}>
-                                🌐 Importar da API
+                                Importar da API
                             </Button>
                             <Button className="btn-rosa" onClick={openCreateModal}>
-                                ➕ Novo País
+                                Novo País
                             </Button>
                         </Col>
                     </Row>
@@ -190,14 +191,14 @@ const CountryManager: React.FC = () => {
                                                 className="me-2"
                                                 onClick={() => handleEdit(country)}
                                             >
-                                                ✏️ Editar
+                                                Editar
                                             </Button>
                                             <Button
                                                 variant="outline-danger"
                                                 size="sm"
                                                 onClick={() => handleDelete(country.id)}
                                             >
-                                                🗑️ Excluir
+                                                Excluir
                                             </Button>
                                         </td>
                                     </tr>
@@ -275,7 +276,7 @@ const CountryManager: React.FC = () => {
             {/* Modal Importar da API */}
             <Modal show={showImportModal} onHide={() => setShowImportModal(false)} size="lg" centered>
                 <Modal.Header closeButton className="border-0">
-                    <Modal.Title className="text-rosa">🌐 Importar da API</Modal.Title>
+                    <Modal.Title className="text-rosa">Importar da API</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{ maxHeight: '400px', overflowY: 'auto' }}>
                     <Row>
