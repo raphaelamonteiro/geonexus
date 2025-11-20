@@ -44,7 +44,6 @@ _Um sistema web construído com o propósito de gerenciar dados relacionados a c
 <a href="#manual"> 💡 Como Executar </a> |
 <a href="#estrutura"> 🗂 Estrutura </a> |
 <br>
-<a href="#capturas"> 📸 Screenshots </a> |
 <a href="#creditos"> 💌 Créditos </a>
 
 </div>
@@ -197,10 +196,6 @@ npm run dev
 ```
 
 ---
-
-# 📸 Screenshots <a id="capturas"></a>
-
-## PRINTS AQUI - EM BREVE!
 
 # 💌 Créditos <a id="creditos"></a>
 
