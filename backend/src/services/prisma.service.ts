@@ -1,4 +1,3 @@
-// backend/src/test-db.ts
 import { PrismaClient } from '@prisma/client'
 
 // Usar diretamente sem o service por enquanto

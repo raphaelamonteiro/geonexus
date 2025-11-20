@@ -1,4 +1,3 @@
-// backend/src/server-minimal.ts
 import express from 'express';
 
 const app = express();

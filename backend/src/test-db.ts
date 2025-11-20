@@ -1,5 +1,5 @@
 // backend/src/test-db.ts
-import { prisma } from './services/prisma.service'; // ← Importação corrigida
+import { prisma } from './services/prisma.service';
 
 async function testDatabase() {
     try {

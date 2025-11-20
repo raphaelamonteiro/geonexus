@@ -2,69 +2,115 @@
 
 :root {
   font-family: "Baloo 2", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  --light-color: #FBFBFB;
+  --rosa-claro: #fff0f6;
+  --rosa-medio: #ffdeeb;
+  --rosa-escuro: #fcc2d7;
+  --rosa-destaque: #e64980;
+  --rosa-texto: #a61e4d;
+  --rosa-borda: #faa2c1;
+  --danger-color: #AF3E3E;
+    --secondary-danger-color: #DA6C6C;
+    --success-color: #75a36d;
+    --secondary-success-color: #CEE5D0;;
+  
 }
 
 body {
-  margin: 0;
+  background-color: var(--rosa-claro) !important;
+  font-family: "Baloo 2",
+    sans-serif;
+}
+
+/* Texto minimalista */
+.card-title {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  color: var(--rosa-destaque) !important;
+}
+
+
+.custom-card {
+  background-color: var(--rosa-medio) !important;
+  border-radius: 15%;
+  align-items: center;
+  text-align: center;
+}
+
+.loading-wrapper {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+.kirby-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 12px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.loading-text {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 24px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  color: var(--rosa-borda);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+.cute-alert {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--light-color) !important;
+  background-color: var(--danger-color) !important;
+}
+
+.btn-cutedanger {
+    background-color: var(--light-color) !important;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 15px;
+  font-weight: 600 !important;
+  color: var(--danger-color) !important;
+}
+.btn-cutedanger:hover {
+  background-color: var(--light-color) !important;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 15px;
+  font-weight: 600 !important;
+  color: #632626 !important;
+}
+
+.btn-cutesuccess {
+  font-family: "Baloo 2", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: var(--light-color) !important;
+    background-color: var(--success-color) !important;
+}
+
+.cutealert-heading {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--rosa-destaque);
+}
+
+.btn-testar {
+  font-family: "Baloo 2", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: var(--light-color) !important;
+    background-color: #CD5D7D !important;
+}
+
+.btn-testar:hover {
+  font-family: "Baloo 2", sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: var(--light-color) !important;
+    background-color: #9c415b !important;
 }

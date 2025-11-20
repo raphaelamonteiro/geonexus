@@ -1,4 +1,3 @@
-// backend/src/test-api.ts
 import { restcountriesService } from './services/restcountries.service';
 
 async function testRestCountriesAPI() {

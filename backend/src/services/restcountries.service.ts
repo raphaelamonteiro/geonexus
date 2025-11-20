@@ -23,7 +23,6 @@ export interface RestCountry {
 }
 
 export const restcountriesService = {
-    // ✅ USANDO O ENDPOINT CORRETO: independent?status=true
     async getAllCountries(): Promise<RestCountry[]> {
         try {
             console.log('🌍 Buscando países da RestCountries API...');

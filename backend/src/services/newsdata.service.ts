@@ -1,4 +1,3 @@
-// backend/src/services/newsdata.service.ts
 import axios from 'axios';
 import dotenv from 'dotenv';
 

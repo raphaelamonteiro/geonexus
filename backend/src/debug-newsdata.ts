@@ -1,4 +1,3 @@
-// backend/src/debug-newsdata.ts
 import dotenv from 'dotenv';
 
 // Carregar env primeiro

@@ -1,4 +1,3 @@
-// backend/src/controllers/news.controller.ts
 import { Request, Response } from 'express';
 import { newsdataService, NewsResponse } from '../services/newsdata.service';
 
