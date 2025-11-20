@@ -3,6 +3,7 @@ import { Container, Navbar, Nav, Alert } from 'react-bootstrap';
 import { apiService } from './services/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Loading from "./components/Loading";
+import Footer from "./components/Footer";
 import './index.css';
 
 
@@ -114,7 +115,10 @@ function App() {
         {activeTab === 'cities' && <CityManager />}
         {activeTab === 'api' && <ApiExplorer />}
       </Container>
+
+      <Footer />
     </div>
+
   );
 }
 
