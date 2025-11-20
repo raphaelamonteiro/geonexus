@@ -6,8 +6,7 @@
 
 <div align="center">
 
-*Um sistema web construído com o propósito de gerenciar dados relacionados a cidades, países e continentes, integrando informações reais de APIs externas em uma interface pastel e acolhedora.*
-
+_Um sistema web construído com o propósito de gerenciar dados relacionados a cidades, países e continentes, integrando informações reais de APIs externas em uma interface pastel e acolhedora._
 
 <img src="https://github.com/raphaelamonteiro/geonexus/blob/main/frontend-geonexus/src/assets/loading-kirby.gif" width="80" />
 
@@ -17,18 +16,18 @@
 
 <div align="center">
 
-![TypeScript](https://img.shields.io/badge/typescript-f2a2b8?style=for-the-badge\&logo=typescript\&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-f2a2b8?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/vite-f2a2b8?style=for-the-badge&logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/react-f2a2b8?style=for-the-badge&logo=react&logoColor=white)
-![Axios](https://img.shields.io/badge/axios-f2a2b8?style=for-the-badge\&logo=axios\&logoColor=white)
-![Prisma](https://img.shields.io/badge/prisma-f2a2b8?style=for-the-badge\&logo=prisma\&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-f2a2b8?style=for-the-badge\&logo=mysql\&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-f2a2b8?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS](https://img.shields.io/badge/css3-f2a2b8?style=for-the-badge\&logo=css\&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-f2a2b8?style=for-the-badge\&logo=bootstrap\&logoColor=white)
-![Git](https://img.shields.io/badge/git-f2a2b8?style=for-the-badge\&logo=git\&logoColor=white)
-![REST Countries](https://img.shields.io/badge/REST%20Countries-f2a2b8?style=for-the-badge\&logo=google-earth\&logoColor=white)
-![NewsData](https://img.shields.io/badge/NewsData-f2a2b8?style=for-the-badge\&logo=news\&logoColor=white)
+![Axios](https://img.shields.io/badge/axios-f2a2b8?style=for-the-badge&logo=axios&logoColor=white)
+![Prisma](https://img.shields.io/badge/prisma-f2a2b8?style=for-the-badge&logo=prisma&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-f2a2b8?style=for-the-badge&logo=mysql&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-f2a2b8?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/css3-f2a2b8?style=for-the-badge&logo=css&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-f2a2b8?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Git](https://img.shields.io/badge/git-f2a2b8?style=for-the-badge&logo=git&logoColor=white)
+![REST Countries](https://img.shields.io/badge/REST%20Countries-f2a2b8?style=for-the-badge&logo=google-earth&logoColor=white)
+![NewsData](https://img.shields.io/badge/NewsData-f2a2b8?style=for-the-badge&logo=news&logoColor=white)
 
 </div>
 
@@ -93,18 +92,17 @@ Além disso, o sistema integra **duas APIs externas** para enriquecer os dados c
 
 # 💻 Tecnologias Utilizadas <a id="tech"></a>
 
-| Tecnologia      | Descrição                |
-| --------------- | ------------------------ |
-| **TypeScript**  | Linguagem principal      |
-| **Node.js**     | Backend                  |
-| **Prisma ORM**  | Modelagem + queries      |
-| **MySQL**       | Banco relacional         |
-| **Axios**       | Consumo de APIs externas |
+| Tecnologia      | Descrição                        |
+| --------------- | -------------------------------- |
+| **TypeScript**  | Linguagem principal              |
+| **Node.js**     | Backend                          |
+| **Prisma ORM**  | Modelagem + queries              |
+| **MySQL**       | Banco relacional                 |
+| **Axios**       | Consumo de APIs externas         |
 | **Bootstrap**   | Interface responsiva e intuitiva |
-| **Express**     | Rotas e controle         |
-| **React/Vite**  | Construção da interface web  |
-| **HTML/CSS/JS** | Estrutura da UI          |
-
+| **Express**     | Rotas e controle                 |
+| **React/Vite**  | Construção da interface web      |
+| **HTML/CSS/JS** | Estrutura da UI                  |
 
 ---
 
@@ -114,12 +112,12 @@ Além disso, o sistema integra **duas APIs externas** para enriquecer os dados c
 
 Fornece dados como:
 
-* Bandeiras
-* Regiões
-* Idiomas
-* Moeda
-* Capital
-* Geografia
+- Bandeiras
+- Regiões
+- Idiomas
+- Moeda
+- Capital
+- Geografia
 
 ### 📰 NewsData
 
@@ -202,8 +200,7 @@ npm run dev
 
 # 📸 Screenshots <a id="capturas"></a>
 
-PRINTS AQUI - EM BREVE!
----
+## PRINTS AQUI - EM BREVE!
 
 # 💌 Créditos <a id="creditos"></a>
 
@@ -214,4 +211,3 @@ PRINTS AQUI - EM BREVE!
 **Professor:** [André Olímpio](https://github.com/andreolimpio)
 
 **Curso:** Análise e Desenvolvimento de Sistemas
-

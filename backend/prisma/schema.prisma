@@ -1,0 +1,38 @@
+// backend/prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Continent {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  countries Country[]
+}
+
+model Country {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  code        String   @unique
+  continentId Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  continent   Continent @relation(fields: [continentId], references: [id])
+  cities      City[]
+}
+
+model City {
+  id        Int      @id @default(autoincrement())
+  name      String
+  countryId Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  country   Country  @relation(fields: [countryId], references: [id])
+}
