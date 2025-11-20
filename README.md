@@ -92,17 +92,17 @@ Além disso, o sistema integra **duas APIs externas** para enriquecer os dados c
 
 # 💻 Tecnologias Utilizadas <a id="tech"></a>
 
-| Tecnologia      | Descrição                        |
-| --------------- | -------------------------------- |
-| **TypeScript**  | Linguagem principal              |
-| **Node.js**     | Backend                          |
-| **Prisma ORM**  | Modelagem + queries              |
-| **MySQL**       | Banco relacional                 |
-| **Axios**       | Consumo de APIs externas         |
-| **Bootstrap**   | Interface responsiva e intuitiva |
-| **Express**     | Rotas e controle                 |
-| **React/Vite**  | Construção da interface web      |
-| **HTML/CSS/JS** | Estrutura da UI                  |
+| Tecnologia         | Descrição                        |
+| ------------------ | -------------------------------- |
+| **TypeScript**     | Linguagem principal              |
+| **Node.js**        | Backend                          |
+| **Prisma ORM 5.0** | Modelagem + queries              |
+| **MySQL**          | Banco relacional                 |
+| **Axios**          | Consumo de APIs externas         |
+| **Bootstrap**      | Interface responsiva e intuitiva |
+| **Express**        | Rotas e controle                 |
+| **React/Vite**     | Construção da interface web      |
+| **HTML/CSS/JS**    | Estrutura da UI                  |
 
 ---
 

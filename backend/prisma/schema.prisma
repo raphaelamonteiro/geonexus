@@ -1,12 +1,11 @@
 // backend/prisma/schema.prisma
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      = env("DATABASE_URL")  // ← ESTA LINHA VOLTA NO PRISMA 5.0
 }
 
 model Continent {
@@ -15,6 +14,8 @@ model Continent {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   countries Country[]
+  
+  @@map("continents")
 }
 
 model Country {
@@ -24,8 +25,10 @@ model Country {
   continentId Int
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
-  continent   Continent @relation(fields: [continentId], references: [id])
+  continent   Continent @relation(fields: [continentId], references: [id], onDelete: Cascade)
   cities      City[]
+  
+  @@map("countries")
 }
 
 model City {
@@ -34,5 +37,7 @@ model City {
   countryId Int
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  country   Country  @relation(fields: [countryId], references: [id])
+  country   Country  @relation(fields: [countryId], references: [id], onDelete: Cascade)
+  
+  @@map("cities")
 }
